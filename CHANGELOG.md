@@ -1,4 +1,4 @@
-## 3.0.0
+## 2.1.0
 * **Breaking:** migrate Material imports and public Material types from `package:flutter/material.dart` to the standalone `package:material_ui/material_ui.dart` package.
 * Require Flutter `>=3.47.0` and Dart `>=3.13.0`.
 * Add `material_ui: ^1.2.0` as a direct dependency.
