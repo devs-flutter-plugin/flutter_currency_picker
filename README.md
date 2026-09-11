@@ -21,6 +21,7 @@ dependencies:
   currency_picker:
     git:
       url: https://github.com/devs-flutter-plugin/flutter_currency_picker.git
+      ref: v2.1.0
   material_ui: ^1.2.0
 ```
 
@@ -87,7 +88,7 @@ showCurrencyPicker(
 
 ## Material UI migration
 
-Version 3.x exposes standalone `material_ui` types in the public API. Applications using this fork should migrate their own Material imports from:
+Version 2.1.0 exposes standalone `material_ui` types in the public API. Applications using this fork should migrate their own Material imports from:
 
 ```dart
 import 'package:flutter/material.dart';
