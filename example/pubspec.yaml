@@ -1,22 +1,22 @@
 name: example
-description: A example application for currency picker package.
-
-# The following line prevents the package from being accidentally published to
-# pub.dev using `pub publish`. This is preferred for private packages.
+description: An example application for the currency_picker package.
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=3.13.0 <4.0.0'
+  flutter: '>=3.47.0'
 
 dependencies:
-  flutter:
-    sdk: flutter
   currency_picker:
     path: ../
+  flutter:
+    sdk: flutter
+  material_ui: ^1.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 flutter:
   uses-material-design: true
