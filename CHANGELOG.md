@@ -1,3 +1,10 @@
+## 3.0.0
+* **Breaking:** migrate Material imports and public Material types from `package:flutter/material.dart` to the standalone `package:material_ui/material_ui.dart` package.
+* Require Flutter `>=3.47.0` and Dart `>=3.13.0`.
+* Add `material_ui: ^1.2.0` as a direct dependency.
+* Update the example application to use standalone Material UI.
+* Replace deprecated `Color.withOpacity` usage with `Color.withValues`.
+
 ## 2.0.22
 * Add more currencies:
   - Uzbekistani Sum
