@@ -1,5 +1,5 @@
 import 'package:currency_picker/src/extensions.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'currency.dart';
 import 'currency_picker_theme_data.dart';
@@ -56,7 +56,7 @@ class CurrencyListView extends StatefulWidget {
   final CurrencyPickerThemeData? theme;
 
   const CurrencyListView({
-    Key? key,
+    super.key,
     required this.onSelect,
     this.favorite,
     this.currencyFilter,
@@ -68,10 +68,10 @@ class CurrencyListView extends StatefulWidget {
     this.physics,
     this.controller,
     this.theme,
-  }) : super(key: key);
+  });
 
   @override
-  _CurrencyListViewState createState() => _CurrencyListViewState();
+  State<CurrencyListView> createState() => _CurrencyListViewState();
 }
 
 class _CurrencyListViewState extends State<CurrencyListView> {
@@ -129,7 +129,7 @@ class _CurrencyListViewState extends State<CurrencyListView> {
                     prefixIcon: const Icon(Icons.search),
                     border: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: const Color(0xFF8C98A8).withOpacity(0.2),
+                        color: const Color(0xFF8C98A8).withValues(alpha: 0.2),
                       ),
                     ),
                   ),
